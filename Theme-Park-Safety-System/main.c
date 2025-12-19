@@ -1,12 +1,10 @@
 /***********************************************************************
  * Theme Park Ride Safety System
- * 
  * Implements a safety-interlocked control system using FreeRTOS.
  * The system halts operation when an obstruction is detected or when
  * an emergency stop is pressed, and only allows restart when:
  *   1) The obstruction is cleared, AND
  *   2) A human operator explicitly confirms restart
- *
  * This architecture mirrors real industrial safety systems:
  *  - Hardware removes energy
  *  - Software enforces restart conditions
