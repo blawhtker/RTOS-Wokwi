@@ -1,9 +1,4 @@
 Blake Whitaker
-UCFID: 5438770
-
-AI Use
-Used Google Gemini to help with syntax on line 19 with syntax 'led_on ? 1:0' blinking LED.
-Also to query about timing vulnerabilities.
 
 Analysis/Engineering
 
