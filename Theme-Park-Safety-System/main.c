@@ -1,11 +1,3 @@
-/* Application: 06 - Final
-   Theme: Theme Park Systems (Orlando)
-   Author: Blake Whitaker
-   UCFID: 543877
-   Google Gemini used for some logic and commenting
-   ADJUSTED SENSOR DELAY FROM 150MS TO 50MS AS SUGGESTED BY STUDENTS ON YELLOWDIG
-*/
-
 // Header files
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
