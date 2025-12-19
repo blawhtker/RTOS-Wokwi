@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -43.3, "left": -62.6, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 23.15,
+      "left": -201.6,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -13.2,
+      "left": -245.8,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 138.35,
+      "left": -201.6,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-led", "id": "led2", "top": 102, "left": -245.8, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -157,
+      "left": -48,
+      "attrs": { "color": "blue" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -1.3, "left": 124.6, "attrs": {} },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": -38.4,
+      "left": -278.4,
+      "attrs": { "text": "Green LED (Heartbeat)" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": 76.8,
+      "left": -278.4,
+      "attrs": { "text": "Red LED (Alert/Mode)" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": -38.4,
+      "left": 105.6,
+      "attrs": { "text": "Radiation Sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text4",
+      "top": -182.4,
+      "left": -67.2,
+      "attrs": { "text": "Mode Button" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "green", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "green", [] ],
+    [ "esp:26", "r1:1", "green", [] ],
+    [ "esp:27", "r2:1", "red", [] ],
+    [ "pot1:SIG", "esp:34", "orange", [] ],
+    [ "btn1:1.l", "esp:12", "blue", [] ],
+    [ "esp:D26", "r1:2", "green", [ "h0" ] ],
+    [ "r1:1", "led1:A", "green", [ "v0" ] ],
+    [ "led1:C", "esp:GND.2", "black", [ "v9.6", "h77.2", "v28.8", "h86.4", "v38.4" ] ],
+    [ "led2:A", "r2:1", "red", [ "v0" ] ],
+    [ "led2:C", "esp:GND.2", "black", [ "v9.6", "h163.6", "v-48" ] ],
+    [ "pot1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "esp:D12", "btn1:2.l", "blue", [ "h-38.4", "v-0.7" ] ],
+    [ "esp:GND.1", "btn1:2.r", "black", [ "h28.5", "v-230.5" ] ],
+    [ "esp:D34", "pot1:SIG", "gold", [ "h-19.2", "v-67.4", "h163.2", "v144", "h76.8" ] ],
+    [ "r2:2", "esp:D27", "red", [ "v0", "h66", "v-67.2" ] ]
+  ],
+  "dependencies": {}
+}
