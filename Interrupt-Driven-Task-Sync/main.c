@@ -1,8 +1,3 @@
-/* --------------------------------------------------------------
-   Blake Whitaker UCFID:5438770
-   Application: 03 - Interrupt-Driven Task Synchronization in FreeRTOS (ESP32)
-   Class: Real Time Systems - Su 2025
----------------------------------------------------------------*/
 #include <stdio.h>
 #include <string.h>
 #include "freertos/FreeRTOS.h"
