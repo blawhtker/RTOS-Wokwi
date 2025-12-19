@@ -1,14 +1,9 @@
 # Synchronization Quest - Application 4 
 
-## Real Time Systems - Summer 2025
-**Instructor:** Dr. Mike Borowczak
-
 ## Author 
 **Name:** Blake Whitaker 
 **Theme:** Space Systems
-
 ---
-
 ## Project Overview
 
 This project explores task coordination and shared resource protection using FreeRTOS on the ESP32. The system simulates real-time sensor monitoring and alert handling using three key synchronization mechanisms:
@@ -129,4 +124,5 @@ Good luck.
 **Final Wokwi Project Link:** [Paste your Wokwi link here]
 
 Download the project Zip.
+
 Head over to webcourses
