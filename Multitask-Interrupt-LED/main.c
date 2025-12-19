@@ -1,9 +1,3 @@
-/* --------------------------------------------------------------
-   Application: 01 - Blake Whitaker
-   Release Type: Baseline Multitask Skeleton Starter Code (Modified)
-   Class: Real Time Systems - Su 2025
-   AI Use: Commented inline
----------------------------------------------------------------*/
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
