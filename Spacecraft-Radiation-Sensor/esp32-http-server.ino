@@ -1,16 +1,3 @@
-/* --------------------------------------------------------------
-   Application: 05 - Space Systems [Final - Rearchitected]
-   Class: Real Time Systems - Su 2025
-   Author: Blake Whitaker
-   UCFID: 5438770
-   Company: [University of Central Florida]
-
-   AI Use: Google Gemini was used as a dev partner to generate thematic ideas
-   and documentation based on the provided project requirements. Unable to fix 
-   stability issues, the program appears to crash then restart when radiation 
-   sensor is too high, then attempts to restart but gets hung.
----------------------------------------------------------------*/
-
 // Standard & FreeRTOS Libraries
 #include <WiFi.h>
 #include <WebServer.h>
