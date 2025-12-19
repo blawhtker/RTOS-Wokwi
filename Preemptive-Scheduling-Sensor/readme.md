@@ -69,5 +69,3 @@ print_status_task is given a medium priority (1) as the satellites immediate sur
 managing power is more important that reporting its status. 
 led_task is given a low priority (0) as this is a useful visual indicator to ground-based
 telescopes but it is non-essential for the satellites survival or primary objectives.
-
-** AI Used to generate tick timeline in (2) and for thematic integration reflection. **
