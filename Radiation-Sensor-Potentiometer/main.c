@@ -1,12 +1,3 @@
-/* --------------------------------------------------------------
-   Application: 04 - FreeRTOS Synchronization Quest (Part B): Signals, Sharing & Safety on the ESP32
-   Release Type: Use of Memory Based Task Communication
-   Class: Real Time Systems - Su 2025
-   Author: Blake Whitaker
-   UCFID: 5438770
-   Company: [University of Central Florida]
-   AI Use: Please commented inline where you use(d) AI
----------------------------------------------------------------*/
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
